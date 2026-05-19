@@ -85,14 +85,22 @@ idea.
 
 ## Security considerations
 
+**All proposals must now have this section, even if it is to say there are no security issues.**
+
+*Think about how to attack your proposal. See [RFC 3552](https://datatracker.ietf.org/doc/html/rfc3552)
+for things to think about, but in particular pay attention to lists from sources like
+[OWASP Top Ten](https://owasp.org/www-project-top-ten/) for inspiration.*
+
 *Some proposals may have some security aspect to them that was addressed in the proposed solution. This
 section is a great place to outline some of the security-sensitive components of your proposal, such as
 why a particular approach was (or wasn't) taken. The example here is a bit of a stretch and unlikely to
 actually be worthwhile of including in a proposal, but it is generally a good idea to list these kinds
 of concerns where possible.*
 
-By having a template available, people would know what the desired detail for a proposal is. This is not
-considered a risk because it is important that people understand the proposal process from start to end.
+MSCs can drastically affect the protocol. The authors of MSCs may not have a security background. If they
+do not consider vulnerabilities with their design, we rely on reviewers to consider vulnerabilities. This
+is easy to forget, so having a mandatory 'Security Considerations' section serves to nudge reviewers
+into thinking like an attacker.
 
 ## Unstable prefix
 
@@ -103,3 +111,8 @@ For more information, see [MSC2324](https://github.com/matrix-org/matrix-doc/pul
 should be used to document things such as what endpoints and names are being used while the feature is
 in development, the name of the unstable feature flag to use to detect support for the feature, or what
 migration steps are needed to switch to newer versions of the proposal.*
+
+## Dependencies
+
+This MSC builds on MSCxxxx, MSCyyyy and MSCzzzz (which at the time of writing have not yet been accepted
+into the spec).

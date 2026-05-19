@@ -1,0 +1,19 @@
+[default]
+check-filename = true
+
+[default.extend-identifiers]
+OTK = "OTK"
+OTKs = "OTKs"
+
+[default.extend-words]
+OTK = "OTK"
+OTKs = "OTKs"
+Iy = "Iy"
+
+[files]
+extend-exclude = [
+  # Use this array to exclude MSCs which have translations in them, after verifying
+  # that the remainder of the proposal is typo-free.
+
+  "proposals/4335-user-limit-exceeded.md", # Contains French
+]
